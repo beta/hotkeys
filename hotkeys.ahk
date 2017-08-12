@@ -94,3 +94,13 @@ Return
 +Esc::
   Send, ~
 Return
+
+; Alt + 2 = F2 (for renaming files)
+!2::
+  Send, {F2}
+Return
+
+; Alt + 4 = Alt + F4 (for closing windows)
+!4::
+  Send, !{F4}
+Return
