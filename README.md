@@ -11,7 +11,9 @@ Below are a list of hotkeys defined in this script.
 Hotkey | Maps to
 ------ | -------
 <kbd>Caps Lock</kbd> + <kbd>I</kbd> / <kbd>J</kbd> / <kbd>K</kbd> / <kbd>L</kbd> | <kbd>↑</kbd> / <kbd>←</kbd> / <kbd>↓</kbd> / <kbd>→</kbd>
+<kbd>Alt</kbd> + <kbd>Caps Lock</kbd> + <kbd>J</kbd> / <kbd>L</kbd> | <kbd>Ctrl</kbd> + <kbd>←</kbd> / <kbd>→</kbd> (jump across a word)
 <kbd>Shift</kbd> + <kbd>Caps Lock</kbd> + <kbd>I</kbd> / <kbd>J</kbd> / <kbd>K</kbd> / <kbd>L</kbd> | <kbd>Shift</kbd> + <kbd>↑</kbd> / <kbd>←</kbd> / <kbd>↓</kbd> / <kbd>→</kbd>
+<kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>Caps Lock</kbd> + <kbd>J</kbd> / <kbd>L</kbd> | <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>←</kbd> / <kbd>→</kbd> (select a word)
 <kbd>Caps Lock</kbd> + <kbd>U</kbd> / <kbd>P</kbd> | <kbd>Home</kbd> / <kbd>End</kbd>
 <kbd>Shift</kbd> + <kbd>Caps Lock</kbd> + <kbd>U</kbd> / <kbd>P</kbd> | <kbd>Shift</kbd> + <kbd>Home</kbd> / <kbd>End</kbd>
 <kbd>Caps Lock</kbd> + <kbd>Y</kbd> / <kbd>H</kbd> | <kbd>Page Up</kbd> / <kbd>Page Down</kbd>
@@ -20,6 +22,8 @@ Hotkey | Maps to
 <kbd>Shift</kbd> + <kbd>Caps Lock</kbd> + <kbd>Back Space</kbd> | (Delete a line)
 <kbd>Ctrl</kbd> + <kbd>Esc</kbd> | <kbd>`</kbd>
 <kbd>Shift</kbd> + <kbd>Esc</kbd> | <kbd>~</kbd>
+<kbd>Alt</kbd> + <kbd>2</kbd> | <kbd>F2</kbd>
+<kbd>Alt</kbd> + <kbd>4</kbd> | <kbd>Alt</kbd> + <kbd>F4</kbd>
 
 ## Usage
 
