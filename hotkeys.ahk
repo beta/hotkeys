@@ -1,10 +1,10 @@
 ; Disable Caps Lock
 *CapsLock::Return
 
-; Caps  + J        = Left
-; Alt   + Caps + J = Ctrl  + Left (jump left accross a word)
-; Shift + Caps + J = Shift + Left
-; Shift + Alt  + J = Shift + Ctrl + Left (select a word on the left)
+; Caps  + J               = Left
+; Alt   + Caps + J        = Ctrl  + Left (jump left accross a word)
+; Shift + Caps + J        = Shift + Left
+; Shift + Alt  + Caps + J = Shift + Ctrl + Left (select a word on the left)
 CapsLock & j::
   If GetKeyState("LShift", "p")
     If GetKeyState("LAlt", "p")
@@ -18,10 +18,10 @@ CapsLock & j::
       Send, {Left}
 Return
 
-; Caps  + L        = Right
-; Alt   + Caps + L = Ctrl  + Right (jump right across a word)
-; Shift + Caps + L = Shift + Right
-; Shift + Alt  + L = Shift + Ctrl + Right (select a word on the right)
+; Caps  + L               = Right
+; Alt   + Caps + L        = Ctrl  + Right (jump right across a word)
+; Shift + Caps + L        = Shift + Right
+; Shift + Alt  + Caps + L = Shift + Ctrl + Right (select a word on the right)
 CapsLock & l::
   If GetKeyState("LShift", "p")
     If GetKeyState("LAlt", "p")
