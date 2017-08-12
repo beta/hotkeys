@@ -1,25 +1,41 @@
 ; Disable Caps Lock
 *CapsLock::Return
 
-; Caps + J = Left
+; Caps  + J        = Left
+; Alt   + Caps + J = Ctrl  + Left (jump left accross a word)
 ; Shift + Caps + J = Shift + Left
+; Shift + Alt  + J = Shift + Ctrl + Left (select a word on the left)
 CapsLock & j::
   If GetKeyState("LShift", "p")
-    Send, +{Left}
+    If GetKeyState("LAlt", "p")
+      Send, ^+{Left}
+    Else
+      Send, +{Left}
   Else
-    Send, {Left}
+    If GetKeyState("LAlt", "p")
+      Send, ^{Left}
+    Else
+      Send, {Left}
 Return
 
-; Caps + L = Right
+; Caps  + L        = Right
+; Alt   + Caps + L = Ctrl  + Right (jump right across a word)
 ; Shift + Caps + L = Shift + Right
+; Shift + Alt  + L = Shift + Ctrl + Right (select a word on the right)
 CapsLock & l::
   If GetKeyState("LShift", "p")
-    Send, +{Right}
+    If GetKeyState("LAlt", "p")
+      Send, ^+{Right}
+    Else
+      Send , +{Right}
   Else
-    Send, {Right}
+    If GetKeyState("LAlt", "p")
+      Send, ^{Right}
+    Else    
+      Send, {Right}
 Return
 
-; Caps + I = Up
+; Caps  + I        = Up
 ; Shift + Caps + I = Shift + Up
 CapsLock & i::
   If GetKeyState("LShift", "p")
@@ -28,7 +44,7 @@ CapsLock & i::
     Send, {Up}
 Return
 
-; Caps + K = Down
+; Caps  + K        = Down
 ; Shift + Caps + K = Shift + Down
 CapsLock & k::
   If GetKeyState("LShift", "p")
@@ -37,7 +53,7 @@ CapsLock & k::
     Send, {Down}
 Return
 
-; Caps + U = Home
+; Caps  + U        = Home
 ; Shift + Caps + U = Shift + Home
 CapsLock & u::
   If GetKeyState("LShift", "p")
@@ -46,7 +62,7 @@ CapsLock & u::
     Send, {Home}
 Return
 
-; Caps + O = End
+; Caps  + O        = End
 ; Shift + Caps + O = Shift + End
 CapsLock & o::
   If GetKeyState("LShift", "p")
@@ -55,7 +71,7 @@ CapsLock & o::
     Send, {End}
 Return
 
-; Caps + Y = Page Up
+; Caps  + Y        = Page Up
 ; Shift + Caps + Y = Shift + Page Up
 CapsLock & y::
   If GetKeyState("LShift", "p")
@@ -64,7 +80,7 @@ CapsLock & y::
     Send, {PgUp}
 Return
 
-; Caps + H = Page Down
+; Caps  + H        = Page Down
 ; Shift + Caps + H = Shift + Page Down
 CapsLock & h::
   If GetKeyState("LShift", "p")
@@ -73,7 +89,7 @@ CapsLock & h::
     Send, {PgDn}
 Return
 
-; Caps + Back Space = Ctrl + Back Space (delete a word)
+; Caps  + Back Space        = Ctrl + Back Space (delete a word)
 ; Shift + Caps + Back Space = (delte a line)
 CapsLock & BackSpace::
   If GetKeyState("LShift", "p") {
