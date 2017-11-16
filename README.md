@@ -29,6 +29,7 @@ Hotkey | Maps to | Description
 <kbd>Alt</kbd> + <kbd>2</kbd> | <kbd>F2</kbd> | Rename
 <kbd>Alt</kbd> + <kbd>4</kbd> | <kbd>Alt</kbd> + <kbd>F4</kbd> | Close window
 <kbd>Alt</kbd> + <kbd>C</kbd> | <kbd>Ctrl</kbd> + <kbd>C</kbd> | Copy
+<kbd>Alt</kbd> + <kbd>X</kbd> | <kbd>Ctrl</kbd> + <kbd>X</kbd> | Cut
 <kbd>Alt</kbd> + <kbd>V</kbd> | <kbd>Ctrl</kbd> + <kbd>V</kbd> | Paste
 <kbd>Alt</kbd> + <kbd>S</kbd> | <kbd>Ctrl</kbd> + <kbd>S</kbd> | Save
 <kbd>Alt</kbd> + <kbd>W</kbd> | <kbd>Ctrl</kbd> + <kbd>W</kbd> | Close document/window

@@ -174,6 +174,11 @@ Return
   Send, ^c
 Return
 
+; Alt + X = Ctrl + X (cut)
+!x::
+  Send, ^x
+Return
+
 ; Alt + V = Ctrl + V (paste)
 !v::
   Send, ^v
