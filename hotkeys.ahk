@@ -89,6 +89,54 @@ CapsLock & h::
     Send, {PgDn}
 Return
 
+; Caps + A        = Shift + Left
+; Alt  + Caps + A = Shift + Ctrl + Left (select a word on the left)
+CapsLock & a::
+  If GetKeyState("LAlt", "p")
+    Send, ^+{Left}
+  Else
+    Send, +{Left}
+Return
+
+; Caps + D        = Shift + Right
+; Alt  + Caps + D = Shift + Ctrl  + Right (select a word on the right)
+CapsLock & d::
+  If GetKeyState("LAlt", "p")
+    Send, ^+{Right}
+  Else
+    Send, +{Right}
+Return
+
+; Caps + W = Shift + Up
+CapsLock & w::
+  Send, +{Up}
+Return
+
+; Caps + S = Shift + Down
+CapsLock & s::
+  Send, +{Down}
+Return
+
+; Caps + Q = Shift + Home
+CapsLock & q::
+  Send, +{Home}
+Return
+
+; Caps + E = Shift + End
+CapsLock & e::
+  Send, +{End}
+Return
+
+; Caps + R = Shift + Page Up
+CapsLock & r::
+  Send, +{PgUp}
+Return
+
+; Caps + F = Shift + Page Down
+CapsLock & f::
+  Send, +{PgDn}
+Return
+
 ; Caps  + Back Space        = Ctrl + Back Space (delete a word)
 ; Shift + Caps + Back Space = (delte a line)
 CapsLock & BackSpace::
@@ -119,4 +167,44 @@ Return
 ; Alt + 4 = Alt + F4 (for closing windows)
 !4::
   Send, !{F4}
+Return
+
+; Alt + C = Ctrl + C (copy)
+!c::
+  Send, ^c
+Return
+
+; Alt + V = Ctrl + V (paste)
+!v::
+  Send, ^v
+Return
+
+; Alt + S = Ctrl + S (save)
+!s::
+  Send, ^s
+Return
+
+; Alt + W = Ctrl + W (close)
+!w::
+  Send, ^w
+Return
+
+; Alt + T = Ctrl + T (new tab)
+!t::
+  Send, ^t
+Return
+
+; Alt + A = Ctrl + A (select all)
+!a::
+  Send, ^a
+Return
+
+; Alt + Z = Ctrl + Z (undo)
+!z::
+  Send, ^z
+Return
+
+; Shift + Alt + Z = Shift + Ctrl + Z (redo)
++!z::
+  Send, ^+z
 Return
