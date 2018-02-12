@@ -1,10 +1,10 @@
 # Hotkeys
 
-This is an AutoHotkey script for some hotkeys I frequently use, in order to achieve a universal experience across different platforms.
+This repo contains the configurations for some hotkeys I frequently use, in order to achieve a universal experience across different platforms.
 
-This script uses the <kbd>Right Ctrl</kbd> key as the main modifier key. You can map <kbd>Caps Lock</kbd> to <kbd> Right Ctrl</kbd> for better experience with tools like [SharpKeys](https://github.com/randyrants/sharpkeys).
+These hotkeys use the <kbd>Right Ctrl</kbd> key as the main modifier key. You can map <kbd>Caps Lock</kbd> to <kbd>Right Ctrl</kbd> for better experience with tools like [SharpKeys](https://github.com/randyrants/sharpkeys) on Windows and [Karabiner Elements](https://pqrs.org/osx/karabiner/index.html) on macOS.
 
-Below is a list of hotkeys defined in this script.
+Below is a list of hotkeys defined in this script. Note that <kbd>Ctrl</kbd> is same to <kbd>control</kbd> in macOS, and <kbd>Alt</kbd> is same to <kbd>option</kbd>. The hotkeys modified with <kbd>Alt</kbd> are not implemented in the Karabiner JSON file.
 
 ## Hotkeys List
 
@@ -36,7 +36,15 @@ Hotkey | Maps to | Description
 
 ## Usage
 
-Download or clone this repo and run the script `hotkeys.ahk` with [AutoHotkey](https://www.autohotkey.com/) if you have it installed. Otherwise find a prebuilt binary from the [releases](https://github.com/beta/hotkeys/releases) page.
+Download or clone this repo first.
+
+- For Windows, install [AutoHotkey](https://www.autohotkey.com/) and run `hotkeys.ahk` to apply the hotkeys. You can also find a prebuilt binary from the [releases](https://github.com/beta/hotkeys/releases) page.
+
+- For macOS, install [Karabiner Elements](https://pqrs.org/osx/karabiner/index.html) and add the rules from `hotkeys.json`. Open the following URL in browser to add the rules directly.
+
+   ```
+   karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fraw.githubusercontent.com%2Fbeta%2Fhotkeys%2Fmaster%2Fhotkeys.json
+   ```
 
 ## License
 
