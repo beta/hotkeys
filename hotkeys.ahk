@@ -1,11 +1,6 @@
-; Disable Caps Lock
-*CapsLock::Return
-
-; Caps  + J               = Left
-; Alt   + Caps + J        = Ctrl  + Left (jump left accross a word)
-; Shift + Caps + J        = Shift + Left
-; Shift + Alt  + Caps + J = Shift + Ctrl + Left (select a word on the left)
-CapsLock & j::
+; Right Ctrl + J       = Left
+; Right Ctrl + Alt + J = Ctrl + Left (jump left across a word)
+RControl & j::
   If GetKeyState("LShift", "p")
     If GetKeyState("LAlt", "p")
       Send, ^+{Left}
@@ -18,129 +13,120 @@ CapsLock & j::
       Send, {Left}
 Return
 
-; Caps  + L               = Right
-; Alt   + Caps + L        = Ctrl  + Right (jump right across a word)
-; Shift + Caps + L        = Shift + Right
-; Shift + Alt  + Caps + L = Shift + Ctrl + Right (select a word on the right)
-CapsLock & l::
+; Right Ctrl + L       = Right
+; Right Ctrl + Alt + L = Ctrl + Right (jump right across a word)
+RControl & l::
   If GetKeyState("LShift", "p")
     If GetKeyState("LAlt", "p")
       Send, ^+{Right}
     Else
-      Send , +{Right}
+      Send, +{Right}
   Else
     If GetKeyState("LAlt", "p")
       Send, ^{Right}
-    Else    
+    Else
       Send, {Right}
 Return
 
-; Caps  + I        = Up
-; Shift + Caps + I = Shift + Up
-CapsLock & i::
+; Right Ctrl + I = Up
+RControl & i::
   If GetKeyState("LShift", "p")
     Send, +{Up}
   Else
     Send, {Up}
 Return
 
-; Caps  + K        = Down
-; Shift + Caps + K = Shift + Down
-CapsLock & k::
+; Right Ctrl + K = Down
+RControl & k::
   If GetKeyState("LShift", "p")
     Send, +{Down}
   Else
     Send, {Down}
 Return
 
-; Caps  + U        = Home
-; Shift + Caps + U = Shift + Home
-CapsLock & u::
+; Right Ctrl + U = Home
+RControl & u::
   If GetKeyState("LShift", "p")
     Send, +{Home}
   Else
     Send, {Home}
 Return
 
-; Caps  + O        = End
-; Shift + Caps + O = Shift + End
-CapsLock & o::
+; Right Control + O = End
+RControl & o::
   If GetKeyState("LShift", "p")
     Send, +{End}
   Else
     Send, {End}
 Return
 
-; Caps  + Y        = Page Up
-; Shift + Caps + Y = Shift + Page Up
-CapsLock & y::
+; Right Control + Y = Page Up
+RControl & y::
   If GetKeyState("LShift", "p")
     Send, +{PgUp}
   Else
     Send, {PgUp}
 Return
 
-; Caps  + H        = Page Down
-; Shift + Caps + H = Shift + Page Down
-CapsLock & h::
+; Right Control + H = Page Down
+RControl & h::
   If GetKeyState("LShift", "p")
     Send, +{PgDn}
   Else
     Send, {PgDn}
 Return
 
-; Caps + A        = Shift + Left
-; Alt  + Caps + A = Shift + Ctrl + Left (select a word on the left)
-CapsLock & a::
+; Right Control + A       = Shift + Left
+; Right Control + Alt + A = Shift + Ctrl + Left (select a word on the left)
+RControl & a::
   If GetKeyState("LAlt", "p")
     Send, ^+{Left}
   Else
     Send, +{Left}
 Return
 
-; Caps + D        = Shift + Right
-; Alt  + Caps + D = Shift + Ctrl  + Right (select a word on the right)
-CapsLock & d::
+; Right Control + D       = Shift + Right
+; Right Control + Alt + D = Shift + Ctrl + Right (select a word on the right)
+RControl & d::
   If GetKeyState("LAlt", "p")
     Send, ^+{Right}
   Else
     Send, +{Right}
 Return
 
-; Caps + W = Shift + Up
-CapsLock & w::
+; Right Control + W = Shift + Up
+RControl & w::
   Send, +{Up}
 Return
 
-; Caps + S = Shift + Down
-CapsLock & s::
+; Right Control + S = Shift + Down
+RControl & s::
   Send, +{Down}
 Return
 
-; Caps + Q = Shift + Home
-CapsLock & q::
+; Right Control + Q = Shift + Home
+RControl & q::
   Send, +{Home}
 Return
 
-; Caps + E = Shift + End
-CapsLock & e::
+; Right Control + E = Shift + End
+RControl & e::
   Send, +{End}
 Return
 
-; Caps + R = Shift + Page Up
-CapsLock & r::
+; Right Control + R = Shift + Page Up
+RControl & r::
   Send, +{PgUp}
 Return
 
-; Caps + F = Shift + Page Down
-CapsLock & f::
+; Right Control + F = Shift + Page Down
+RControl & f::
   Send, +{PgDn}
 Return
 
-; Caps  + Back Space        = Ctrl + Back Space (delete a word)
-; Shift + Caps + Back Space = (delte a line)
-CapsLock & BackSpace::
-  If GetKeyState("LShift", "p") {
+; Right Control + Alt + Back Space = delete a line
+RControl & BackSpace::
+  If GetKeyState("LAlt", "p") {
     Send, {End}
     Send, +{Home}
     Send, {Delete}
@@ -149,29 +135,14 @@ CapsLock & BackSpace::
     Send, ^{BackSpace}
 Return
 
-; Ctrl + Esc = `
-^Esc::
-  Send, ``
-Return
-
-; Shift + Esc = ~
-+Esc::
-  Send, ~
-Return
-
-; Alt + 2 = F2 (for renaming files)
-!2::
-  Send, {F2}
-Return
-
-; Alt + 4 = Alt + F4 (for closing windows)
-!4::
+; Alt + Q = Alt + F4 (for closing windows)
+!q::
   Send, !{F4}
 Return
 
 ; Alt + C = Ctrl + C (copy)
 !c::
-  Send, ^c
+  Send, ^{Insert}
 Return
 
 ; Alt + X = Ctrl + X (cut)
@@ -181,7 +152,7 @@ Return
 
 ; Alt + V = Ctrl + V (paste)
 !v::
-  Send, ^v
+  Send, +{Insert}
 Return
 
 ; Alt + S = Ctrl + S (save)
@@ -199,6 +170,16 @@ Return
   Send, ^t
 Return
 
+; Alt + N = Ctrl + N (new file)
+!n::
+  Send, ^n
+Return
+
+; Alt + O = Ctrl + O (open file)
+!o::
+  Send, ^o
+Return
+
 ; Alt + A = Ctrl + A (select all)
 !a::
   Send, ^a
@@ -209,7 +190,37 @@ Return
   Send, ^z
 Return
 
+; Alt + Y = Ctrl + Y (redo)
+!y::
+  Send, ^y
+Return
+
 ; Shift + Alt + Z = Shift + Ctrl + Z (redo)
 +!z::
   Send, ^+z
+Return
+
+; Alt + 1 = Ctrl + 1
+!1::
+  Send, ^1
+Return
+
+; Alt + 2 = Ctrl + 2
+!2::
+  Send, ^2
+Return
+
+; Alt + 3 = Ctrl + 3
+!3::
+  Send, ^3
+Return
+
+; Alt + 4 = Ctrl + 4
+!4::
+  Send, ^4
+Return
+
+; Alt + 5 = Ctrl + 5
+!5::
+  Send, ^5
 Return
