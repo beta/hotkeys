@@ -221,6 +221,46 @@
                 "left_command"
               ]
             }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com.googlecode.iterm2$",
+                "^com.apple.Terminal$"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "u",
+            "modifiers": {
+              "mandatory": [
+                "right_control"
+              ],
+              "optional": [
+                "caps_lock",
+                "command",
+                "option",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "home"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.googlecode.iterm2$",
+                "^com.apple.Terminal$"
+              ]
+            }
           ]
         },
         {
@@ -243,7 +283,47 @@
             {
               "key_code": "right_arrow",
               "modifiers": [
-                "left_command"
+                "right_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com.googlecode.iterm2$",
+                "^com.apple.Terminal$"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "o",
+            "modifiers": {
+              "mandatory": [
+                "right_control"
+              ],
+              "optional": [
+                "caps_lock",
+                "command",
+                "option",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "end"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.googlecode.iterm2$",
+                "^com.apple.Terminal$"
               ]
             }
           ]
@@ -272,8 +352,8 @@
             {
               "key_code": "left_arrow",
               "modifiers": [
-                "left_command",
-                "shift"
+                "shift",
+                "left_command"
               ]
             }
           ]
@@ -297,8 +377,8 @@
             {
               "key_code": "right_arrow",
               "modifiers": [
-                "left_command",
-                "shift"
+                "shift",
+                "left_command"
               ]
             }
           ]
