@@ -34,6 +34,14 @@ Hotkey | Maps to | Description
 <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>Z</kbd> | <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>Z</kbd> | Redo
 <kbd>Alt</kbd> + <kbd>1</kbd> / <kbd>2</kbd> / <kbd>3</kbd> / <kbd>4</kbd> / <kbd>5</kbd> | <kbd>Ctrl</kbd> + <kbd>1</kbd> / <kbd>2</kbd> / <kbd>3</kbd> / <kbd>4</kbd> / <kbd>5</kbd> | Switch tabs
 
+Hotkeys listed below are for macOS and ikbc Poker keyboards only.
+
+Hotkey | Maps to | Description
+------ | ------- | -----------
+<kbd>Left Command</kbd> + <kbd>Esc</kbd> | <kbd>Left Command</kbd> + <kbd>\`</kbd> | Switching windows of an app
+<kbd>Right Ctrl</kbd> + <kbd>Esc</kbd> | <kbd>\`</kbd> | Backtick
+<kbd>Right Ctrl</kbd> + number row keys (<kbd>1</kbd> to <kbd>=</kbd>) | <kbd>F1</kbd> to <kbd>F12</kbd> | Function keys
+
 ## Usage
 
 Download or clone this repo first.
