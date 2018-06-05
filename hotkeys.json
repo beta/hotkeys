@@ -538,7 +538,7 @@
       ]
     },
     {
-      "description": "Right Control + Escape = Backtick (`)",
+      "description": "Control + Escape = Backtick (`)",
       "manipulators": [
         {
           "type": "basic",
@@ -546,7 +546,7 @@
             "key_code": "escape",
             "modifiers": {
               "mandatory": [
-                "right_control"
+                "control"
               ]
             }
           },

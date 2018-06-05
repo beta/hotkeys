@@ -39,7 +39,7 @@ Hotkeys listed below are for macOS and ikbc Poker keyboards only.
 Hotkey | Maps to | Description
 ------ | ------- | -----------
 <kbd>Left Command</kbd> + <kbd>Esc</kbd> | <kbd>Left Command</kbd> + <kbd>\`</kbd> | Switching windows of an app
-<kbd>Right Ctrl</kbd> + <kbd>Esc</kbd> | <kbd>\`</kbd> | Backtick
+<kbd>Ctrl</kbd> + <kbd>Esc</kbd> | <kbd>\`</kbd> | Backtick
 <kbd>Right Ctrl</kbd> + number row keys (<kbd>1</kbd> to <kbd>=</kbd>) | <kbd>F1</kbd> to <kbd>F12</kbd> | Function keys
 
 ## Usage
