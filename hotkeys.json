@@ -13,6 +13,7 @@
                 "right_control"
               ],
               "optional": [
+                "left_control",
                 "caps_lock",
                 "command",
                 "option",
@@ -35,6 +36,7 @@
                 "right_control"
               ],
               "optional": [
+                "left_control",
                 "caps_lock",
                 "command",
                 "option",
@@ -57,6 +59,7 @@
                 "right_control"
               ],
               "optional": [
+                "left_control",
                 "caps_lock",
                 "command",
                 "option",
@@ -79,6 +82,7 @@
                 "right_control"
               ],
               "optional": [
+                "left_control",
                 "caps_lock",
                 "command",
                 "option",
@@ -106,6 +110,7 @@
                 "right_control"
               ],
               "optional": [
+                "left_control",
                 "caps_lock",
                 "command",
                 "option"
@@ -130,6 +135,7 @@
                 "right_control"
               ],
               "optional": [
+                "left_control",
                 "caps_lock",
                 "command",
                 "option"
@@ -154,6 +160,7 @@
                 "right_control"
               ],
               "optional": [
+                "left_control",
                 "caps_lock",
                 "command",
                 "option"
@@ -178,6 +185,7 @@
                 "right_control"
               ],
               "optional": [
+                "left_control",
                 "caps_lock",
                 "command",
                 "option"
@@ -207,6 +215,7 @@
                 "right_control"
               ],
               "optional": [
+                "left_control",
                 "caps_lock",
                 "command",
                 "option",
@@ -241,6 +250,7 @@
                 "right_control"
               ],
               "optional": [
+                "left_control",
                 "caps_lock",
                 "command",
                 "option",
@@ -272,6 +282,7 @@
                 "right_control"
               ],
               "optional": [
+                "left_control",
                 "caps_lock",
                 "command",
                 "option",
@@ -306,6 +317,7 @@
                 "right_control"
               ],
               "optional": [
+                "left_control",
                 "caps_lock",
                 "command",
                 "option",
@@ -342,6 +354,7 @@
                 "right_control"
               ],
               "optional": [
+                "left_control",
                 "caps_lock",
                 "command",
                 "option"
@@ -367,6 +380,7 @@
                 "right_control"
               ],
               "optional": [
+                "left_control",
                 "caps_lock",
                 "command",
                 "option"
@@ -397,6 +411,7 @@
                 "right_control"
               ],
               "optional": [
+                "left_control",
                 "caps_lock",
                 "command",
                 "option",
@@ -419,6 +434,7 @@
                 "right_control"
               ],
               "optional": [
+                "left_control",
                 "caps_lock",
                 "command",
                 "option",
@@ -446,6 +462,7 @@
                 "right_control"
               ],
               "optional": [
+                "left_control",
                 "caps_lock",
                 "command",
                 "option",
@@ -471,6 +488,7 @@
                 "right_control"
               ],
               "optional": [
+                "left_control",
                 "caps_lock",
                 "command",
                 "option",
