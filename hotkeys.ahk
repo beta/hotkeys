@@ -1,4 +1,4 @@
-; Right Ctrl + J       = Left
+﻿; Right Ctrl + J       = Left
 ; Right Ctrl + Alt + J = Ctrl + Left (jump left across a word)
 RControl & j::
   If GetKeyState("LShift", "p")
@@ -223,4 +223,24 @@ Return
 ; Alt + 5 = Ctrl + 5
 !5::
   Send, ^5
+Return
+
+; Right Control + [ = 「
+^[::
+  Send, 「
+Return
+
+; Shift + Right Control + [ = 『
++^[::
+  Send, 『
+Return
+
+; Right Control + ] = 」
+^]::
+  Send, 」
+Return
+
+; Shift + Right Control + ] = 』
++^]::
+  Send, 』
 Return

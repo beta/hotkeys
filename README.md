@@ -33,6 +33,8 @@ Hotkey | Maps to | Description
 <kbd>Alt</kbd> + <kbd>Y</kbd> | <kbd>Ctrl</kbd> + <kbd>Y</kbd> | Redo
 <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>Z</kbd> | <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>Z</kbd> | Redo
 <kbd>Alt</kbd> + <kbd>1</kbd> / <kbd>2</kbd> / <kbd>3</kbd> / <kbd>4</kbd> / <kbd>5</kbd> | <kbd>Ctrl</kbd> + <kbd>1</kbd> / <kbd>2</kbd> / <kbd>3</kbd> / <kbd>4</kbd> / <kbd>5</kbd> | Switch tabs
+<kbd>Right Ctrl</kbd> + <kbd>[</kbd> / <kbd>]</kbd> | `「` / `」` | Chinese quotes
+<kbd>Shift</kbd> + <kbd>Right Ctrl</kbd> + <kbd>[</kbd> / <kbd>]</kbd> | `『` / `』` | Chinese double quotes
 
 Hotkeys listed below are for macOS and ikbc Poker keyboards only.
 
