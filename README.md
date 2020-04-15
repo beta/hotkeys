@@ -8,6 +8,8 @@ This repo contains the configurations for some hotkeys I frequently use, in orde
 
 [AutoHotkey](https://www.autohotkey.com/) is used for Windows, and [Karabiner Elements](https://pqrs.org/osx/karabiner/index.html) is used for macOS.
 
+![Hotkeys overview](keyboard.png)
+
 ## Installation
 
 **For Windows:** download and run a prebuilt binary from the [releases](https://github.com/beta/hotkeys/releases) page.
