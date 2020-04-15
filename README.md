@@ -1,80 +1,86 @@
 # Hotkeys
 
-This repo contains the configurations for some hotkeys I frequently use, in order to achieve a universal experience across different platforms.
+This repo contains the configurations for some hotkeys I frequently use, in order to achieve a universal experience across different platforms. Three parts are included:
 
-These hotkeys use the <kbd>Right Ctrl</kbd> key as the main modifier key. You can map <kbd>Caps Lock</kbd> to <kbd>Right Ctrl</kbd> for better experience with tools like [SharpKeys](https://github.com/randyrants/sharpkeys) on Windows and [Karabiner Elements](https://pqrs.org/osx/karabiner/index.html) on macOS.
+1. A "CapsLock Hack" that use <kbd>CapsLock</kbd> as a modifier key, for example, <kbd>CapsLock</kbd> + <kbd>I</kbd>/<kbd>J</kbd>/<kbd>K</kbd>/<kbd>L</kbd> will function as the arrow keys.
+2. Some hotkeys made for ikbc Poker keyboards, as there's no <kbd>F1</kbd>-<kbd>F12</kbd> row nor a backtick/tilde (<kbd>\`/~</kbd>) key.
+3. Some hotkeys made for my own use.
 
-## Branch `beta`
+[AutoHotkey](https://www.autohotkey.com/) is used for Windows, and [Karabiner Elements](https://pqrs.org/osx/karabiner/index.html) is used for macOS.
 
-This branch contains some hotkeys for my own use (on Windows). I switched the three left modifier keys with SharpKeys:
+## Installation
 
-- <kbd>Left Alt</kbd> now serves as <kbd>Left Ctrl</kbd>
-- <kbd>Left Win</kbd> now serves as <kbd>Left Alt</kbd>
-- <kbd>Left Ctrl</kbd> now serves as <kbd>Left Win</kbd>
+**For Windows:** download and run a prebuilt binary from the [releases](https://github.com/beta/hotkeys/releases) page.
 
-| Hotkey                                                        | Maps to                                             | Description                       |
-| ------------------------------------------------------------- | --------------------------------------------------- | --------------------------------- |
-| <kbd>Left Ctrl</kbd> + <kbd>Tab</kbd>                         | <kbd>Alt</kbd> + <kbd>Tab</kbd>                     | Switch between windows            |
-| <kbd>Left Shift</kbd> + <kbd>Left Ctrl</kbd> + <kbd>Tab</kbd> | <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>Tab</kbd>  | Switch between windows (backward) |
-| <kbd>Left Alt</kbd> + <kbd>Tab</kbd>                          | _Disabled_                                          |                                   |
-| <kbd>Left Win</kbd> + <kbd>Tab</kbd>                          | <kbd>Ctrl</kbd> + <kbd>Tab</kbd>                    | Switch between tabs               |
-| <kbd>Left Shift</kbd> + <kbd>Left Win</kbd> + <kbd>Tab</kbd>  | <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>Tab</kbd> | Switch between tabs (backward)    |
-| <kbd>Left Ctrl</kbd> + <kbd>Space</kbd>                       | <kbd>Left Win</kbd> + <kbd>Space</kbd>              | Switch between languages          |
-| <kbd>Left Win</kbd> + <kbd>Space</kbd>                        | <kbd>Left Ctrl</kbd> + <kbd>Space</kbd>             |                                   |
+**For macOS:**
 
-No prebuilt binary is available for this branch.
+1. Install [Karabiner Elements](https://pqrs.org/osx/karabiner/index.html).
+2. Use Karabiner Elements to map <kbd>CapsLock</kbd> to <kbd>Right Ctrl</kbd>.
+3. Open the URL(s) below in the browser to import the hotkeys.
 
-## Hotkeys List
+   ```
+   CapsLock Hacks:
 
-Below is a list of hotkeys defined in this script. Note that <kbd>Ctrl</kbd> is same to <kbd>control</kbd> in macOS, and <kbd>Alt</kbd> is same to <kbd>option</kbd>. The hotkeys modified with <kbd>Alt</kbd> are not implemented in the Karabiner JSON file.
+   karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fraw.githubusercontent.com%2Fbeta%2Fhotkeys%2Fmaster%2Fkarabiner%2Fcapslock_hack.json
 
-| Hotkey                                                                                             | Maps to                                                                                        | Description                          |
-| -------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------ |
-| <kbd>Right Ctrl</kbd> + <kbd>I</kbd> / <kbd>J</kbd> / <kbd>K</kbd> / <kbd>L</kbd>                  | <kbd>↑</kbd> / <kbd>←</kbd> / <kbd>↓</kbd> / <kbd>→</kbd>                                      | Arrows                               |
-| <kbd>Right Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>I</kbd> / <kbd>J</kbd> / <kbd>K</kbd> / <kbd>L</kbd> | <kbd>Ctrl</kbd> + <kbd>↑</kbd> / <kbd>←</kbd> / <kbd>↓</kbd> / <kbd>→</kbd>                    | Jump across a word                   |
-| <kbd>Right Ctrl</kbd> + <kbd>W</kbd> / <kbd>A</kbd> / <kbd>S</kbd> / <kbd>D</kbd>                  | <kbd>Shift</kbd> + <kbd>↑</kbd> / <kbd>←</kbd> / <kbd>↓</kbd> / <kbd>→</kbd>                   | Selections                           |
-| <kbd>Right Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>W</kbd> / <kbd>A</kbd> / <kbd>S</kbd> / <kbd>D</kbd> | <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>↑</kbd> / <kbd>←</kbd> / <kbd>↓</kbd> / <kbd>→</kbd> | Select a word                        |
-| <kbd>Right Ctrl</kbd> + <kbd>U</kbd> / <kbd>O</kbd>                                                | <kbd>Home</kbd> / <kbd>End</kbd>                                                               | Home & End                           |
-| <kbd>Right Ctrl</kbd> + <kbd>Q</kbd> / <kbd>E</kbd>                                                | <kbd>Shift</kbd> + <kbd>Home</kbd> / <kbd>End</kbd>                                            | Select to line start/end             |
-| <kbd>Right Ctrl</kbd> + <kbd>Y</kbd> / <kbd>H</kbd>                                                | <kbd>Page Up</kbd> / <kbd>Page Down</kbd>                                                      | Page up & page down                  |
-| <kbd>Right Ctrl</kbd> + <kbd>R</kbd> / <kbd>F</kbd>                                                | <kbd>Shift</kbd> + <kbd>Page Up</kbd> / <kbd>Page Down</kbd>                                   | Select a page up/down                |
-| <kbd>Right Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Backspace</kbd>                                      |                                                                                                | Delete a line                        |
-| <kbd>Alt</kbd> + <kbd>Q</kbd>                                                                      | <kbd>Alt</kbd> + <kbd>F4</kbd>                                                                 | Close window                         |
-| <kbd>Alt</kbd> + <kbd>C</kbd>                                                                      | <kbd>Ctrl</kbd> + <kbd>Insert</kbd>                                                            | Copy (this also works in terminals)  |
-| <kbd>Alt</kbd> + <kbd>X</kbd>                                                                      | <kbd>Ctrl</kbd> + <kbd>X</kbd>                                                                 | Cut                                  |
-| <kbd>Alt</kbd> + <kbd>V</kbd>                                                                      | <kbd>Shift</kbd> + <kbd>Insert</kbd>                                                           | Paste (this also works in terminals) |
-| <kbd>Alt</kbd> + <kbd>S</kbd>                                                                      | <kbd>Ctrl</kbd> + <kbd>S</kbd>                                                                 | Save                                 |
-| <kbd>Alt</kbd> + <kbd>W</kbd>                                                                      | <kbd>Ctrl</kbd> + <kbd>W</kbd>                                                                 | Close document/window                |
-| <kbd>Alt</kbd> + <kbd>T</kbd>                                                                      | <kbd>Ctrl</kbd> + <kbd>T</kbd>                                                                 | New tab                              |
-| <kbd>Alt</kbd> + <kbd>N</kbd>                                                                      | <kbd>Ctrl</kbd> + <kbd>N</kbd>                                                                 | New file                             |
-| <kbd>Alt</kbd> + <kbd>O</kbd>                                                                      | <kbd>Ctrl</kbd> + <kbd>O</kbd>                                                                 | Open file                            |
-| <kbd>Alt</kbd> + <kbd>A</kbd>                                                                      | <kbd>Ctrl</kbd> + <kbd>A</kbd>                                                                 | Select all                           |
-| <kbd>Alt</kbd> + <kbd>Z</kbd>                                                                      | <kbd>Ctrl</kbd> + <kbd>Z</kbd>                                                                 | Undo                                 |
-| <kbd>Alt</kbd> + <kbd>Y</kbd>                                                                      | <kbd>Ctrl</kbd> + <kbd>Y</kbd>                                                                 | Redo                                 |
-| <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>Z</kbd>                                                   | <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>Z</kbd>                                              | Redo                                 |
-| <kbd>Alt</kbd> + <kbd>1</kbd> / <kbd>2</kbd> / <kbd>3</kbd> / <kbd>4</kbd> / <kbd>5</kbd>          | <kbd>Ctrl</kbd> + <kbd>1</kbd> / <kbd>2</kbd> / <kbd>3</kbd> / <kbd>4</kbd> / <kbd>5</kbd>     | Switch tabs                          |
-| <kbd>Right Ctrl</kbd> + <kbd>[</kbd> / <kbd>]</kbd>                                                | `「` / `」`                                                                                    | Chinese quotes                       |
-| <kbd>Shift</kbd> + <kbd>Right Ctrl</kbd> + <kbd>[</kbd> / <kbd>]</kbd>                             | `『` / `』`                                                                                    | Chinese double quotes                |
+   Poker Hacks:
 
-Hotkeys listed below are for macOS and ikbc Poker keyboards only.
+   karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fraw.githubusercontent.com%2Fbeta%2Fhotkeys%2Fmaster%2Fkarabiner%2Fpoker.json
+   ```
 
-| Hotkey                                                                 | Maps to                                 | Description                 |
-| ---------------------------------------------------------------------- | --------------------------------------- | --------------------------- |
-| <kbd>Left Command</kbd> + <kbd>Esc</kbd>                               | <kbd>Left Command</kbd> + <kbd>\`</kbd> | Switching windows of an app |
-| <kbd>Ctrl</kbd> + <kbd>Esc</kbd>                                       | <kbd>\`</kbd>                           | Backtick                    |
-| <kbd>Right Ctrl</kbd> + number row keys (<kbd>1</kbd> to <kbd>=</kbd>) | <kbd>F1</kbd> to <kbd>F12</kbd>         | Function keys               |
+## CapsLock Hacks
 
-## Usage
+| Hotkey                                                                 | Maps to                                | Description                          |
+| ---------------------------------------------------------------------- | -------------------------------------- | ------------------------------------ |
+| <kbd>CapsLock</kbd> + <kbd>I</kbd>                                     | <kbd>↑</kbd>                           | Arrow up                             |
+| <kbd>CapsLock</kbd> + <kbd>J</kbd>                                     | <kbd>←</kbd>                           | Arrow left                           |
+| <kbd>CapsLock</kbd> + <kbd>K</kbd>                                     | <kbd>↓</kbd>                           | Arrow down                           |
+| <kbd>CapsLock</kbd> + <kbd>L</kbd>                                     | <kbd>→</kbd>                           | Arrow right                          |
+| <kbd>CapsLock</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd>                  | <kbd>Shift</kbd> + <kbd>↑</kbd>        | Select up                            |
+| <kbd>CapsLock</kbd> + <kbd>Shift</kbd> + <kbd>J</kbd>                  | <kbd>Shift</kbd> + <kbd>←</kbd>        | Select left                          |
+| <kbd>CapsLock</kbd> + <kbd>Shift</kbd> + <kbd>K</kbd>                  | <kbd>Shift</kbd> + <kbd>↓</kbd>        | Select down                          |
+| <kbd>CapsLock</kbd> + <kbd>Shift</kbd> + <kbd>L</kbd>                  | <kbd>Shift</kbd> + <kbd>→</kbd>        | Select right                         |
+| <kbd>CapsLock</kbd> + <kbd>Alt</kbd> + <kbd>J</kbd>                    | <kbd>Ctrl</kbd> + <kbd>←</kbd>         | _(Windows only)_ Jump a word left    |
+| <kbd>CapsLock</kbd> + <kbd>Alt</kbd> + <kbd>L</kbd>                    | <kbd>Ctrl</kbd> + <kbd>→</kbd>         | _(Windows only)_ Jump a word right   |
+| <kbd>CapsLock</kbd> + <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>J</kbd> | <kbd>Ctrl</kbd> + <kbd>←</kbd>         | _(Windows only)_ Select a word left  |
+| <kbd>CapsLock</kbd> + <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>L</kbd> | <kbd>Ctrl</kbd> + <kbd>→</kbd>         | _(Windows only)_ Select a word right |
+| <kbd>CapsLock</kbd> + <kbd>U</kbd>                                     | <kbd>Home</kbd>                        | Home                                 |
+| <kbd>CapsLock</kbd> + <kbd>O</kbd>                                     | <kbd>End</kbd>                         | End                                  |
+| <kbd>CapsLock</kbd> + <kbd>Y</kbd>                                     | <kbd>PageUp</kbd>                      | Page up                              |
+| <kbd>CapsLock</kbd> + <kbd>H</kbd>                                     | <kbd>PageDown</kbd>                    | Page down                            |
+| <kbd>CapsLock</kbd> + <kbd>Backspace</kbd>                             | <kbd>Ctrl</kbd> + <kbd>Backspace</kbd> | Delete a word                        |
+| <kbd>CapsLock</kbd> + <kbd>Ctrl</kbd> + <kbd>Backspace</kbd>           | -                                      | _(Windows only)_ Delete a line       |
 
-Download or clone this repo first.
+## Poker Hacks
 
-- For Windows, install [AutoHotkey](https://www.autohotkey.com/) and run `hotkeys.ahk` to apply the hotkeys. You can also find a prebuilt binary from the [releases](https://github.com/beta/hotkeys/releases) page.
+| Hotkey                                                                    | Maps to                                 | Description                                     |
+| ------------------------------------------------------------------------- | --------------------------------------- | ----------------------------------------------- |
+| <kbd>Left Command</kbd> + <kbd>Esc</kbd>                                  | <kbd>Left Command</kbd> + <kbd>\`</kbd> | _(macOS only)_ Switch between windows of an app |
+| <kbd>Control</kbd> + <kbd>Esc</kbd>                                       | <kbd>\`</kbd>                           | Backtick                                        |
+| <kbd>CapsLock</kbd> + <kbd>0</kbd>-<kbd>9</kbd>/<kbd>-</kbd>/<kbd>=</kbd> | <kbd>F1</kbd>-<kbd>F12</kbd>            | Function keys                                   |
 
-- For macOS, install [Karabiner Elements](https://pqrs.org/osx/karabiner/index.html) and add the rules from `hotkeys.json`. Open the following URL in browser to add the rules directly.
+## Beta's Own Hotkeys
 
-  ```
-  karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fraw.githubusercontent.com%2Fbeta%2Fhotkeys%2Fmaster%2Fhotkeys.json
-  ```
+Currently the hotkeys below are for Windows only, and require that the 3 left modifier keys are exchanged (I've done this with [SharpKeys](https://github.com/randyrants/sharpkeys)):
+
+- <kbd>Left Alt</kbd> → <kbd>Left Ctrl</kbd>
+- <kbd>Left Win</kbd> → <kbd>Left Alt</kbd>
+- <kbd>Left Ctrl</kbd> → <kbd>Left Win</kbd>
+
+| Hotkey                                                   | Maps to                                             | Description                                     |
+| -------------------------------------------------------- | --------------------------------------------------- | ----------------------------------------------- |
+| <kbd>CapsLock</kbd> + <kbd>[</kbd>                       | `「`                                                | (Windows only) Chinese single quote             |
+| <kbd>CapsLock</kbd> + <kbd>]</kbd>                       | `」`                                                | (Windows only) Chinese single quote             |
+| <kbd>CapsLock</kbd> + <kbd>Shift</kbd> + <kbd>[</kbd>    | `『`                                                | (Windows only) Chinese double quote             |
+| <kbd>CapsLock</kbd> + <kbd>Shift</kbd> + <kbd>]</kbd>    | `』`                                                | (Windows only) Chinese double quote             |
+| <kbd>Left Ctrl</kbd> + <kbd>Q</kbd>                      | <kbd>Alt</kbd> + <kbd>F4</kbd>                      | (Windows only) Close window                     |
+| <kbd>Left Ctrl</kbd> + <kbd>Tab</kbd>                    | <kbd>Alt</kbd> + <kbd>Tab</kbd>                     | (Windows only) Switch between windows           |
+| <kbd>Left Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Tab</kbd> | <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>Tab</kbd>  | (Windows only) Switch between windows backwards |
+| <kbd>Left Alt</kbd> + <kbd>Tab</kbd>                     | _Disabled_                                          |                                                 |
+| <kbd>Left Win</kbd> + <kbd>Tab</kbd>                     | <kbd>Ctrl</kbd> + <kbd>Tab</kbd>                    | (Windows only) Switch between tabs              |
+| <kbd>Left Win</kbd> + <kbd>Shift</kbd> + <kbd>Tab</kbd>  | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Tab</kbd> | (Windows only) Switch between tabs backwards    |
+| <kbd>Left Ctrl</kbd> + <kbd>Space</kbd>                  | <kbd>Win</kbd> + <kbd>Space</kbd>                   | (Windows only) Switch between input languages   |
+| <kbd>Left Win</kbd> + <kbd>Space</kbd>                   | <kbd>Ctrl</kbd> + <kbd>Space</kbd>                  | (Windows only)                                  |
 
 ## License
 
