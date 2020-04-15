@@ -244,3 +244,51 @@ Return
 +^]::
   Send, 』
 Return
+
+; ==============================================================================
+; beta's own hotkeys.
+; ==============================================================================
+
+; Left Control + Tab = Alt + Tab
+<^<+Tab::
+  Send, {AltDown}{ShiftDown}{Tab}
+  KeyWait, LCtrl
+  KeyWait, LShift
+  Send, {ShiftUp}{AltUp}
+Return
+<^Tab::
+  Send {AltDown}{Tab}
+  KeyWait, LCtrl
+  Send, {AltUp}
+Return
+
+; Left Alt + Tab = Nothing
+<!<+Tab::Return
+<!Tab::Return
+
+; Left Win + Tab = Control + Tab
+<#<+Tab::
+  Send, {CtrlDown}{ShiftDown}{Tab}
+  KeyWait, LWin
+  KeyWait, LShift
+  Send, {ShiftUp}{CtrlUp}
+Return
+<#Tab::
+  Send, {CtrlDown}{Tab}
+  KeyWait, LWin
+  Send, {CtrlUp}
+Return
+
+; Left Control + Space = Left Win + Space (for switching languages)
+LControl & Space::
+  Send, {LWinDown}{Space}
+  KeyWait, LCtrl
+  Send, {LWinUp}
+Return
+
+; Left Win + Space = Left Control + Space
+LWin & Space::
+  Send, {CtrlDown}{Space}
+  KeyWait, LWin
+  Send, {CtrlUp}
+Return
