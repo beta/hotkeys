@@ -58,7 +58,8 @@ This repo contains the configurations for some hotkeys I frequently use, in orde
 | Hotkey                                                                    | Maps to                                 | Description                                     |
 | ------------------------------------------------------------------------- | --------------------------------------- | ----------------------------------------------- |
 | <kbd>Left Command</kbd> + <kbd>Esc</kbd>                                  | <kbd>Left Command</kbd> + <kbd>\`</kbd> | _(macOS only)_ Switch between windows of an app |
-| <kbd>Control</kbd> + <kbd>Esc</kbd>                                       | <kbd>\`</kbd>                           | Backtick                                        |
+| <kbd>Right Control</kbd> + <kbd>Esc</kbd>                                 | <kbd>\`</kbd>                           | Backtick                                        |
+| <kbd>Left Shift</kbd> + <kbd>Esc</kbd>                                    | <kbd>~</kbd>                            | _(macOS only)_ Tilde                            |
 | <kbd>CapsLock</kbd> + <kbd>0</kbd>-<kbd>9</kbd>/<kbd>-</kbd>/<kbd>=</kbd> | <kbd>F1</kbd>-<kbd>F12</kbd>            | Function keys                                   |
 
 ## Beta's Own Hotkeys
